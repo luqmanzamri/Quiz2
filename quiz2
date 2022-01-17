@@ -1,0 +1,33 @@
+package quiz2;
+import java.util.Scanner;
+class One {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		double total;
+		System.out.println("please enter class held : ");
+		double classheld= sc.nextInt();
+		
+		
+		System.out.println("please enter class attend : ");
+		double classattend= sc.nextInt();
+		
+		
+		total = (classattend/classheld)*100;
+		
+		System.out.println("Your attendance is : " + total);
+		
+		if (total>75) {
+			System.out.println("You can access for examination");
+		}
+		else {
+			System.out.println("Sorry, you cannot take the exam ");
+		}
+		
+		
+
+	}
+
+}
